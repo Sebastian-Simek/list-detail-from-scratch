@@ -1,18 +1,20 @@
 // IMPORT MODULES under test here:
+import { renderComposerNames } from '../utils.js';
+import { composersArray } from '../composers.js';
 // import { example } from '../example.js';
 
 const test = QUnit.test;
 
-test('time to test a function', (expect) => {
+test('testing renderComposer', (expect) => {
     //Arrange
     // Set up your arguments and expectations
-    const expected = true;
+    const expected = `<div>Composers<h1>J.S Bach</h1><p>tbd</p></div>`;
     
     //Act 
     // Call the function you're testing and set the result to a const
-    const actual = true;
+    const actual = renderComposerNames(composersArray[0]);
 
     //Expect
     // Make assertions about what is expected versus the actual result
-    expect.equal(actual, expected);
+    expect.equal(actual.outerHTML, expected);
 });

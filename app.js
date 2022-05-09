@@ -1,8 +1,12 @@
-// import functions and grab DOM elements
+import { renderComposerNames } from './utils.js';
+import { composersArray } from './composers.js';
 
-// let state
+const div = document.getElementById('composers');
 
-// set event listeners 
-  // get user input
-  // use user input to update state 
-  // update DOM to reflect the new state
+for (let composers of composersArray) {
+    console.log(composers);
+    const composerDiv = renderComposerNames(composers);
+    div.append(composerDiv);
+  
+}
+
