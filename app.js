@@ -6,6 +6,5 @@ const div = document.getElementById('composers');
 for (let composers of composersArray) {
     const composerDiv = renderComposerNames(composers);
     div.append(composerDiv);
-  
 }
 
