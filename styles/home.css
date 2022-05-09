@@ -1,1 +1,3 @@
-/* add home page styles here */
+#composers {
+    display: flex;
+}
