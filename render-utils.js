@@ -12,15 +12,15 @@ export function renderComposerNames(composers) {
     const h1 = document.createElement('h1');
     h1.textContent = composers.name;
 
-    a.append(h1, img);
+    a.append(img);
 
-    div.append(a);
+    div.append(h1, a);
     return div;
 }
 
 export function renderComposerNamesDetails(composers) {
     const div = document.createElement('div');
-    div.classList.add('composers');
+    div.classList.add('composers2');
 
     const h2 = document.createElement('h2');
     h2.textContent = composers.name;
