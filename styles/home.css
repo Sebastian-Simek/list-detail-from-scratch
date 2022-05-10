@@ -1,3 +1,22 @@
 #composers {
     display: flex;
+    justify-content: center;
+}
+
+.composers{
+    display: flex;
+    width: 30%;
+    flex-direction: column;
+    align-items: center;
+    border: solid black 2px;
+    border-radius: 10px;
+    padding: 25px;
+    margin: 20px;
+    justify-content: center;
+}
+
+.composers img {
+    width: 100%;
+    border-radius: 50%;
+    border: solid black 5px;
 }

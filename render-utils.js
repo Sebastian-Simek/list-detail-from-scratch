@@ -2,7 +2,7 @@ export function renderComposerNames(composers) {
     
     const a = document.createElement('a');
     a.href = `/composer-details/?id=${composers.id}`;
-    a.textContent = composers.img;
+    a.textContent = 'Learn More';
 
     const div = document.createElement('div');
     div.textContent = 'Composer:';
@@ -16,12 +16,13 @@ export function renderComposerNames(composers) {
 
 export function renderComposerNamesDetails(composers) {
     const div = document.createElement('div');
+    div.classList.add('composers');
 
     const h2 = document.createElement('h2');
     h2.textContent = composers.name;
 
     const img = document.createElement('img');
-    img.src = '../assets/alchemy-logo.png';
+    img.src = composers.img;
 
     const p = document.createElement('p');
     p.textContent = composers.era;
