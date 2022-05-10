@@ -23,7 +23,7 @@ export function renderComposerNamesDetails(composers) {
     div.classList.add('composers2');
 
     const h2 = document.createElement('h2');
-    h2.textContent = composers.name;
+    h2.textContent = composers.name2;
 
     const img = document.createElement('img');
     img.src = composers.img;

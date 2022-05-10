@@ -19,7 +19,7 @@
 .composers img {
     width: 100%;
     border-radius: 50%;
-    border: solid black 5px;
+    border: solid black 2px;
 }
 
 .composers2{
@@ -37,7 +37,7 @@
 .composers2 img {
     width: 40%;
     border-radius: 50%;
-    border: solid black 5px;
+    border: solid black 2px;
 }
 
 #home {
