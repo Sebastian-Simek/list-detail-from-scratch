@@ -39,6 +39,6 @@ export function renderComposerNamesDetails(composers) {
         li.textContent = `${music.pieceName}: ${music.Classification}`;
         ul.append(li);
     }
-    div.append(h2, img, p, ul);
+    div.append(h2, img, p, ul,);
     return div;
 }

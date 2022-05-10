@@ -17,7 +17,8 @@
 }
 
 .composers img {
-    width: 100%;
+    width: 150px;
+    height: 100%;
     border-radius: 50%;
     border: solid black 2px;
 }
@@ -32,6 +33,7 @@
     padding: 25px;
     margin: 20px;
     justify-content: center;
+    background-color: antiquewhite;
 }
 
 .composers2 img {
@@ -43,4 +45,8 @@
 #home {
     display: flex;
     justify-content: center;
+}
+
+.background {
+    background-image: url(../assets/shostakovich-manuscript.jpeg);
 }
