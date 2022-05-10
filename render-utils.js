@@ -2,15 +2,19 @@ export function renderComposerNames(composers) {
     
     const a = document.createElement('a');
     a.href = `/composer-details/?id=${composers.id}`;
-    a.textContent = 'Learn More';
+
+    const img = document.createElement('img');
+    img.src = composers.img;
 
     const div = document.createElement('div');
-    div.textContent = 'Composer:';
+    div.classList.add('composers');
     
     const h1 = document.createElement('h1');
     h1.textContent = composers.name;
 
-    div.append(h1, a);
+    a.append(h1, img);
+
+    div.append(a);
     return div;
 }
 
