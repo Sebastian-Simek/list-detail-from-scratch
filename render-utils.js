@@ -19,6 +19,10 @@ export function renderComposerNames(composers) {
 }
 
 export function renderComposerNamesDetails(composers) {
+    const body = document.querySelector('body');
+    // body.classList.add('background');
+    body.style.backgroundImage = `url(../assets/${composers.name}-manuscript.jpeg)`;
+    
     const div = document.createElement('div');
     div.classList.add('composers2');
 

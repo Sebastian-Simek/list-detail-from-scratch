@@ -9,3 +9,5 @@ const composer = findById(params.get('id'), composersArray);
 const composerDiv = renderComposerNamesDetails(composer);
 main.append(composerDiv);
 
+
+
