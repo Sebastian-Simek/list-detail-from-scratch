@@ -38,9 +38,16 @@ export function renderComposerNamesDetails(composers) {
     ul.textContent = 'Hits:';
 
     for (let music of composers.hits) {
+        
+        const a1 = document.createElement('a');
+        a1.href = music.link;
+        a1.target = '_blank';
+        
         const li = document.createElement('li');
         li.textContent = `${music.pieceName}: ${music.Classification}`;
-        ul.append(li);
+        
+        a1.append(li);
+        ul.append(a1);
     }
     div.append(h2, img, p, ul,);
     return div;
